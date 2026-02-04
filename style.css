@@ -1,6 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   text-align: center;
+  padding: 10px;
 }
 
 #tablero {
@@ -16,4 +17,53 @@ input {
   height: 38px;
   font-size: 18px;
   text-align: center;
+  border: 1px solid #ccc;
+}
+
+.botones {
+  margin-top: 20px;
+}
+
+.botones button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+/* Media queries para móviles */
+@media (max-width: 600px) {
+  #tablero {
+    grid-template-columns: repeat(9, 8vw); /* Usar viewport width para responsividad */
+    gap: 1px;
+    margin: 10px auto;
+  }
+
+  input {
+    width: 7vw;
+    height: 7vw;
+    font-size: 5vw; /* Ajustar tamaño de fuente */
+    min-width: 30px; /* Mínimo para usabilidad */
+    min-height: 30px;
+  }
+
+  .botones button {
+    padding: 12px 24px;
+    font-size: 18px;
+    margin: 5px;
+    width: 100%;
+    max-width: 200px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  #menu h2 {
+    font-size: 20px;
+  }
+
+  #menu input {
+    width: 80%;
+    max-width: 200px;
+  }
 }
