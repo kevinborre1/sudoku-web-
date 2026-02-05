@@ -72,6 +72,7 @@ function generarDesdeMenu() {
 
   document.getElementById("menu").style.display = "none";
   document.getElementById("juego").style.display = "block";
+  document.querySelector(".botones").style.display = "block";
 
   iniciarJuego(cant);
 }

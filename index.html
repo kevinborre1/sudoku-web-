@@ -4,11 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sudoku</title>
+
+  
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div id="menu">
+  <h2>SUDOKU</h2>
+
   <h2>Generar Sudoku</h2>
 
   <label>
@@ -21,17 +25,12 @@
 </div>
 
 <div id="juego" style="display:none;">
+  <h1>Sudoku</h1>
   <div id="tablero"></div>
-</div>
-
-<h1>Sudoku</h1>
-
-<div id="tablero"></div>
-
-<div class="botones">
-  <button onclick="resolver()">Resolver</button>
-  <button onclick="nuevo()">Nuevo</button>
-    
+  <div class="botones" style="display:none;">
+    <button onclick="resolver()">Resolver</button>
+    <button onclick="nuevo()">Nuevo</button>
+  </div>
 </div>
 
 <script src="main.js"></script>

@@ -30,7 +30,7 @@ input {
   margin: 0 10px;
 }
 
-/* Media queries para móviles */
+/* Media queries para celulares */
 @media (max-width: 600px) {
   #tablero {
     grid-template-columns: repeat(9, 8vw); /* Usar viewport width para responsividad */
