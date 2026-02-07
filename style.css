@@ -2,6 +2,12 @@ body {
   font-family: Arial, sans-serif;
   text-align: center;
   padding: 10px;
+  background-color: #007bff; /* HEX, RGB, o nombres como 'blue' */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrado vertical */
+  align-items: center; /* Centrado horizontal */
+  min-height: 100vh; /* Ocupa toda la altura de la ventana */
 }
 
 #tablero {
@@ -22,12 +28,33 @@ input {
 
 .botones {
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .botones button {
   padding: 10px 20px;
   font-size: 16px;
-  margin: 0 10px;
+  margin: 0;
+}
+
+/* Centrar el botón del menú principal */
+#menu button {
+  display: block;
+  margin: 18px auto;
+}
+
+/* Asegurar que el tablero y los títulos estén centrados */
+#tablero {
+  text-align: center;
+}
+
+/* Ajustar márgenes para centrar visualmente */
+h1, h2 {
+  margin: 8px 0;
 }
 
 /* Media queries para celulares */
